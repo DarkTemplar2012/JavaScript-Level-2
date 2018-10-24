@@ -1,0 +1,36 @@
+﻿<html>
+
+<head>
+	<title>PCRE в JS</title>
+</head>
+
+<body>
+	<form novalidate>
+		<p>
+			<label for="mail">
+				<span>Please enter an email address:</span>
+				<input type="email" id="mail" name="mail" placeholder="example@mail.ru">
+			</label>
+			<span id='mailMessage'></span>
+		</p>
+		<p>
+			<label for="name">
+				<span>Please enter name:</span>
+				<input type="text" id="name" name="name" placeholder="Ivan или Иван">
+			</label>
+			<span id='nameMessage'></span>
+		</p>
+		<p>
+			<label for="phone">
+				<span>Please enter phone:</span>
+				<input type="phone" id="phone" name="phone" placeholder="+7(777)777-7777">
+			</label>
+			<span id='phoneMessage'></span>
+		</p>
+		<input type="submit" value="Отправить" id="btn" disabled ></p>
+	</form>
+	<script src="main.js" type="text/javascript"></script>
+	<div></div>
+</body>
+
+</html>

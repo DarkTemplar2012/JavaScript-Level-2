@@ -1,0 +1,103 @@
+* {
+  margin: 0 auto;
+}
+
+body {
+  margin: 20px auto;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#container {
+  position: relative;
+  margin: 0 auto;
+  width: 1008px;
+}
+
+.main {
+  position: relative;
+  width: 1008px;
+}
+
+.topTab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  height: 50px;
+  width: 250px;
+  background-color: green;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.topTab:hover {
+
+  background-color: rgb(86, 138, 9);
+  cursor: pointer;
+}
+
+#topTab2 {
+  left: 252px;
+}
+
+#topTab3 {
+  left: 504px;
+}
+
+#topTab4 {
+  left: 756px;
+}
+
+.topTabActive {
+  color: green;
+  background-color: white;
+  height: 52px;
+  border: solid green;
+  border-width: 2px 2px 0;
+  z-index: 5;
+}
+
+.topTabActive:hover {
+  color: green;
+  background-color: white;
+}
+
+.allTab {
+  padding: 20px;
+  position: absolute;
+  margin: 0 auto;
+  border: 2px solid green;
+  box-sizing: border-box;
+  display: none;
+  min-width: 1006px;
+
+}
+
+.allTabActive {
+  display: block;
+}
+
+#text {
+  margin-top: 50px;
+  box-sizing: border-box;
+  position: absolute;
+}
+
+input {
+  margin: 10px 10px 0 0;
+}
+
+#cityMessage {
+  width: 155px;
+  height: 100px;
+  overflow-y: auto;
+  margin: 2px 0 0 145px;
+  display: none;
+}

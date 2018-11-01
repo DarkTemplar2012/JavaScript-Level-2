@@ -1,0 +1,16 @@
+{
+  "result": "1",
+  "comments": [{
+      "id_comment": "1",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptate, harum laboriosam voluptatibus provident cumque eaque dolore esse, nemo perspiciatis aspernatur repudiandae natus, non doloremque consectetur unde? Ullam, incidunt. Error?"
+    },
+    {
+      "id_comment": "2",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptate, harum laboriosam voluptatibus provident cumque eaque dolore esse, nemo perspiciatis aspernatur repudiandae natus, non doloremque consectetur unde? Ullam, incidunt. Error?"
+    },
+    {
+      "id_comment": "3",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptate, harum laboriosam voluptatibus provident cumque eaque dolore esse, nemo perspiciatis aspernatur repudiandae natus, non doloremque consectetur unde? Ullam, incidunt. Error?"
+    }
+  ]
+}

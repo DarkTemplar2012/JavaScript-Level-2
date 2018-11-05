@@ -1,0 +1,10 @@
+.btn-delete{
+  float: right;
+  /* margin-right: 200px; */
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.reviewUnit {
+  border-bottom: 2px solid gray;
+}

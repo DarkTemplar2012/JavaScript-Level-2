@@ -1,0 +1,46 @@
+.b-welcome {
+  background-color: $mainColor;
+  padding: 20px 0;
+  color: $secondColor;
+
+  @include media-breakpoint-up(lg) {
+    padding: 60px 0 40px;
+  }
+
+  &__txt {
+    padding: 0 10px;
+    max-width: 600px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 1000px;
+    }
+  }
+
+  &_titleH1 {
+    font-size: 20px;
+    font-family: 'Lato-Semibold', sans-serif;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &_titleH2 {
+    font-size: 10px;
+    font-family: 'Lato-Thin', sans-serif;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+
+  &::after {
+    @include borderTopLeft;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &::after {
+      bottom: -40px;
+      border-top: 40px solid $mainColor;
+    }
+  }
+}

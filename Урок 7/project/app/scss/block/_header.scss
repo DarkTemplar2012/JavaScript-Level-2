@@ -1,0 +1,78 @@
+.b-headerMain {
+  position: relative;
+  background-color: $mainColor;
+  color: $secondColor;
+
+  &::before {
+    @include borderTopRight;
+  }
+
+  @include media-breakpoint-up(xl) {
+    &::before {
+      bottom: -40px;
+      border-top: 40px solid $mainColor;
+    }
+  }
+
+  &_headerLink {
+    // color: $secondColor;
+    transition-duration: .2s;
+
+    &:hover {
+      color: #B2B2B2;
+      text-decoration: none;
+    }
+  }
+
+  &_headerTop {
+    padding: 10px 10px 20px;
+    max-width: 600px;
+
+    @include media-breakpoint-up(xl) {
+      display: flex;
+      padding: 20px 0 40px;
+      min-width: 1200px;
+    }
+  }
+
+  &__nav {
+    &_visible {
+      display: none;
+
+      @include media-breakpoint-up(xl) {
+        display: flex;
+        width: 800px;
+        margin: 0 auto;
+        list-style: none;
+        font-size: 13px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &_headerTel {
+    float: right;
+
+    @include media-breakpoint-up(xl) {
+      margin-top: 50px;
+      font-size: 17px;
+      width: 200px;
+    }
+  }
+
+  &_headerLogo {
+    float: left;
+
+    @include media-breakpoint-up(xl) {
+      height: 80px;
+      margin-right: 160px;
+    }
+  }
+
+  &_headerSocial {
+    @include media-breakpoint-up(xl) {
+      margin-top: 45px;
+      height: 80px;
+    }
+  }
+}

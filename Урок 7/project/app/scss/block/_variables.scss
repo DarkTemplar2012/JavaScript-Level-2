@@ -1,0 +1,39 @@
+$mainColor: black;
+$secondColor: white;
+
+%borderSyle {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+
+@mixin borderTopRight {
+  @extend %borderSyle;
+  bottom: -10px;
+  border-top: 10px solid $mainColor;
+  border-right: 100vw solid transparent;
+}
+
+@mixin borderTopLeft {
+  @extend %borderSyle;
+  bottom: -10px;
+  border-top: 10px solid $mainColor;
+  border-left: 100vw solid transparent;
+}
+
+@mixin borderBottomRight {
+  @extend %borderSyle;
+  top: -10px;
+  border-bottom: 10px solid $mainColor;
+  border-right: 100vw solid transparent;
+}
+
+@mixin borderBottomLeft {
+  @extend %borderSyle;
+  top: -10px;
+  border-bottom: 10px solid $mainColor;
+  border-left: 100vw solid transparent;
+}

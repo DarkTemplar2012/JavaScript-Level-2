@@ -1,0 +1,16 @@
+.b-galery {
+  padding: 50px 10px;
+
+  @include media-breakpoint-up(lg) {
+    width: 1050px;
+    padding: 50px 0;
+  }
+
+  &_title {
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-weight: bold;
+  }
+}

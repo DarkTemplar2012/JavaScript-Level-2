@@ -1,0 +1,43 @@
+.b-ourJobs {
+  max-width: 600px;
+  margin: 0 auto;
+
+  // box-sizing: border-box;
+  @include media-breakpoint-up(lg) {
+    max-width: 1000px;
+  }
+
+  &_title {
+    visibility: hidden;
+    position: absolute;
+    width: 0;
+
+    @include media-breakpoint-up(lg) {
+      visibility: visible;
+      position: initial;
+      display: block;
+      margin: 100px 0 0;
+      font-size: 12px;
+      padding: 0 30px 0 0;
+      box-sizing: border-box;
+      text-align: left;
+      line-height: 15px;
+    }
+  }
+
+  &_imageA {
+    padding: 0;
+  }
+
+  &_image {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: grayscale(0%);
+    transition-duration: .5s;
+
+    &:hover {
+      filter: grayscale(100%);
+    }
+  }
+}

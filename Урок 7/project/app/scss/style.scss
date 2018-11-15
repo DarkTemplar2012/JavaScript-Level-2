@@ -1,0 +1,23 @@
+// @import "../packages/bootstrap-4.1.1/scss/bootstrap";
+@import "../packages/bootstrap-4.1.1/scss/functions";
+@import "../packages/bootstrap-4.1.1/scss/variables";
+@import "../packages/bootstrap-4.1.1/scss/mixins";
+@import "../packages/bootstrap-4.1.1/scss/grid";
+@import "../packages/bootstrap-4.1.1/scss/utilities";
+
+@import "block/variables.scss";
+@import "font.scss";
+@import "main.scss";
+@import "block/logoAndIcon";
+@import "block/header.scss";
+@import "jsorCarousel.scss";
+@import "block/welcome.scss";
+@import "block/ourJobs.scss";
+@import "block/blog.scss";
+@import "block/galerry.scss";
+@import "block/partner.scss";
+@import "block/description.scss";
+@import "block/footer.scss";
+@import "block/metatag.scss";
+@import "foreignStyle.scss";
+@import "scrollBar.scss";

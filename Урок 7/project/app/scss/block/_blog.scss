@@ -1,0 +1,142 @@
+.btn-primary {
+  background-color: $mainColor;
+  border-radius: 0;
+  border-style: none; // margin: 10px;
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    background-color: $mainColor;
+    border-radius: 0;
+    border-style: none;
+  }
+
+  &:active {
+    background-color: $mainColor;
+    border-radius: 0;
+    border-style: none;
+  }
+}
+
+.b-blog {
+  background-color: $mainColor;
+  padding: 30px 0;
+
+  &_title {
+    display: inline-block;
+    font-size: 15px;
+    color: $secondColor;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px;
+
+    @include media-breakpoint-up(lg) {
+      // margin: 30px 0;
+      font-size: 20px;
+    }
+  }
+
+  &_allUnit {
+    max-width: 610px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 1000px;
+      // margin: auto;
+      justify-content: space-between;
+    }
+  }
+
+  &_titleUnit {
+    font-size: 15px;
+    color: #CCC;
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  &_unit {
+    width: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+
+  &_img {
+    display: block;
+    width: 300px;
+    overflow: hidden;
+  }
+
+  &_article {
+    background-color: $mainColor;
+    color: #ccc;
+    display: block;
+    float: left;
+    width: 300px;
+    height: 260px;
+    padding: 40px 30px 0 30px;
+  }
+
+  &_articleTitle {
+    font-size: 17px;
+  }
+
+  &_articleTxt {
+    font-size: 13px;
+    height: 105px;
+  }
+
+  &_pulse {
+    position: relative;
+    display: inline-block;
+    background-color: $mainColor;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0 50px;
+    text-transform: uppercase;
+    margin: 0 -1px;
+    font-size: 12px;
+  }
+
+  &_pulseTxt {
+    animation: pulse 2s infinite;
+  }
+
+  &::before {
+    @include borderBottomLeft;
+  }
+
+  &::after {
+    @include borderTopRight;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &::before {
+      top: -40px;
+      border-bottom: 40px solid $mainColor;
+    }
+
+    &::after {
+      bottom: -40px;
+      border-top: 40px solid $mainColor;
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,43 @@
+.b-partner {
+  background-color: $mainColor;
+  padding: 40px 0;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    padding: 100px 0;
+  }
+
+  &_title {
+    color: $secondColor;
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 20px;
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  &:before {
+    @include borderBottomRight;
+  }
+
+  &:after {
+    @include borderTopLeft;
+  }
+
+  @include media-breakpoint-up(lg) {
+    &::before {
+      top: -40px;
+      border-bottom: 40px solid $mainColor;
+    }
+
+    &::after {
+      bottom: -40px;
+      border-top: 40px solid $mainColor;
+    }
+  }
+}
